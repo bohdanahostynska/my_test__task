@@ -185,15 +185,15 @@ class ReportsRow extends Component {
         <td>
           <Link
             to="#"
-            onClick={() => this.deleteExpenses(data["id"])}
-            title={T("delete")}
+            onClick={() => this.addExpenses(data["id"])}
+            title={T("add")}
           >
             <FontAwesomeIcon icon="trash-alt" size="1x" />
           </Link>
           <Link
             to="#"
-            onClick={() => this.addExpenses(data["id"])}
-            title={T("add")}
+            onClick={() => this.deleteExpenses(data["id"])}
+            title={T("delete")}
           >
             <FontAwesomeIcon icon="trash-alt" size="1x" />
           </Link>
